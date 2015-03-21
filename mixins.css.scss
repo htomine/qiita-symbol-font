@@ -1,0 +1,19 @@
+@import 'qiita_symbol_font';
+
+// Qiita Symbol Font
+
+@mixin qsf($symbol: $qsf-logomark, $size: inherit, $color: inherit) {
+  font-family: 'QiitaSymbolFont';
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+
+  &:before {
+    content: $symbol;
+    font-size: $size;
+    color: $color;
+  }
+
+}
