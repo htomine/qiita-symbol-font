@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'QiitaSymbolFont';
+    src: url('fonts/QiitaSymbolFont.eot');
+    src: url('fonts/QiitaSymbolFont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/QiitaSymbolFont.woff') format('woff'),
+         url('fonts/QiitaSymbolFont.ttf') format('truetype'),
+         url('fonts/QiitaSymbolFont.svg#QiitaSymbolFont') format('svg');
+    src: url('fonts/QiitaSymbolFont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.qsf {
+    display: inline-block;
+    font: normal normal normal 14px/1 QiitaSymbolFont;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    transform: translate(0, 0);
+}
+
+.qsf.qsf-qiita-icon:before { content: '\e000'; }     // Qiita icon type logo
+.qsf.qsf-kobito-mark:before { content: '\e001'; }    // kobito character mark
+.qsf.qsf-qiita-o:before { content: '\e003'; }        // Outlined Qiita logo
+.qsf.qsf-qiita:before { content: '\e004'; }          // Qiita logo
+.qsf.qsf-team-o:before { content: '\e005'; }         // Outlined :Team logo
+.qsf.qsf-team-s:before { content: '\e006'; }         // Short :Team logo (:Team)
+.qsf.qsf-team:before { content: '\e007'; }           // :Team logo (Qiita:Team)
+.qsf.qsf-kobito:before { content: '\e008'; }         // kobito logo with character mark
+.qsf.qsf-career:before { content: '\e009'; }         // Qiita:Career logo
+.qsf.qsf-increments:before { content: '\e00f'; }     // Increments logo
